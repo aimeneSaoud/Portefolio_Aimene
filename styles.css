@@ -27,6 +27,38 @@
     height: auto;
 }
 
+.backend {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px 50px;
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+.backend h1 {
+    font-size: 22px;
+    color: #0063c5;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0063c5;
+}
+
+.logo-backend {
+    width: 40px;
+    height: auto;
+}
+
+.skills-backend {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
+    justify-items: center;
+    align-items: start;
+}
+
 .skills-frontend {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
