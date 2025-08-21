@@ -9,17 +9,15 @@
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 50px 50px;
+    padding: 20px 10px;
     width: 400px;
-    margin: 20px auto;
     text-align: center;
 }
 .frontend h1 {
     font-size: 22px;
     color: #0063c5;
     margin: 0 0 20px 0;       /* espace sous le titre */
-    padding-bottom: 10px;     /* petite séparation visuelle */
-    border-bottom: 2px solid #0063c5;
+    padding-bottom: 10px;
 }
 
 .logo-frontend {
@@ -31,19 +29,32 @@
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 50px 50px;
+    padding: 20px 10px;
     width: 400px;
-    margin: 20px auto;
     text-align: center;
 }
 
+.skills{
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.skills h1{
+    font-size: 22px;
+    color: #0063c5;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+}
 
 .backend h1 {
     font-size: 22px;
     color: #0063c5;
     margin: 0 0 20px 0;
     padding-bottom: 10px;
-    border-bottom: 2px solid #0063c5;
 }
 
 .logo-backend {
@@ -67,7 +78,20 @@
     align-items: start;
 }
 
+.skills-display{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
+    justify-items: center;
+    align-items: start;
+}
 
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* espace entre les cadres */
+    flex-wrap: wrap; /* pour que ça passe bien sur mobile */
+}
 
 
 
@@ -82,4 +106,8 @@
 .mail-link {
     color: #ffffff;
     text-decoration: none;
+}
+
+#test {
+    text-transform: capitalize;
 }
