@@ -62,6 +62,11 @@
     height: auto;
 }
 
+.logo-skill {
+    width: 40px;
+    height: auto;
+}
+
 .skills-backend {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
