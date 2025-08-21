@@ -3,7 +3,7 @@
     padding: 0%;
     overflow-x: hidden;
     background-color: #fdfaf6;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .frontend{
@@ -50,6 +50,22 @@
 .skills h1{
     font-size: 22px;
     color: #0063c5;
+    margin: 0 0 20px 0;
+    padding-bottom: 25px;
+}
+
+.competences-title {
+    text-align: center;
+    font-size: 35px;
+    color: #004183;
+    margin: 0 0 20px 0;
+    padding-bottom: 25px;
+}
+
+.formation-title {
+    text-align: center;
+    font-size: 35px;
+    color: #004183;
     margin: 0 0 20px 0;
     padding-bottom: 25px;
 }
@@ -125,6 +141,37 @@
     flex-wrap: wrap; /* pour que ça passe bien sur mobile */
 }
 
+.formation-current{
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+    width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formation-past1{
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+    width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.formations p {
+    color: rgb(55 65 81);
+
+}
+
+.learn-more {
+    text-align: right;
+}
 
 
 .pied_page {
@@ -142,4 +189,8 @@
 
 #test {
     text-transform: capitalize;
+}
+
+.pied_page p {
+    color: #ffffff;
 }
