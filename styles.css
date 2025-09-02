@@ -1,196 +1,95 @@
-.html, body, main {
-    margin: 0%;
-    padding: 0%;
-    overflow-x: hidden;
-    background-color: #fdfaf6;
-    font-family: Arial, Helvetica, sans-serif;
+/*GRID DES SKILLS*/
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Code", monospace
 }
+
+
+body{
+    background-color: #282c33;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+
+}
+
+
+
+.logo{
+    max-height: 70px;
+    max-width: 70px;
+    
+}
+
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    gap:25px
+}
+
+.skills-frontend{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    height: 300px;
+    width: 300px;
+    justify-items: center;
+}
+
+.skills-backend{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    height: 300px;
+    width: 300px;
+    justify-items: center;
+}
+
+.skills-generic{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    height: 300px;
+    width: 300px;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.skill-frontend{
+
+}
+
+.skill-backend{
+    
+}
+
+.skill-generic{
+    
+}
+
 
 .frontend{
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 0px;
-    width: 320px;
-    height: auto;
-    text-align: center;
-}
-.frontend h1 {
-    font-size: 22px;
-    color: #0063c5;
-    margin: 0 0 20px 0;       /* espace sous le titre */
-    padding-bottom: 10px;
-}
-
-.logo-frontend {
-    width: 40px;
-    height: auto;
-}
-
-.backend {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 0px;
-    width: 320px;
-    height: auto;
-    text-align: center;
-}
-
-.skills{
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 0px;
-    width: 320px;
-    height: auto;
-    text-align: center;
-}
-
-.skills h1{
-    font-size: 22px;
-    color: #0063c5;
-    margin: 0 0 20px 0;
-    padding-bottom: 25px;
-}
-
-.competences-title {
-    text-align: center;
-    font-size: 35px;
-    color: #004183;
-    margin: 0 0 20px 0;
-    padding-bottom: 25px;
-}
-
-.formation-title {
-    text-align: center;
-    font-size: 35px;
-    color: #004183;
-    margin: 0 0 20px 0;
-    padding-bottom: 25px;
-}
-
-.backend h1 {
-    font-size: 22px;
-    color: #0063c5;
-    margin: 0 0 20px 0;
-    padding-bottom: 25px;
-}
-
-#logo-vuejs {
-    width: 55px; /* Ajuste la taille du logo Vue.js */
-    height: auto;
-}
-
-#logo-bootstrap {
-    width: 60px;   /* Mets la taille que tu veux, par exemple 50px */
-    height: auto;
-}
-
-#logo-php{
-    width: 70px;   /* Mets la taille que tu veux, par exemple 60px */
-    height: auto;
-}
-
-#logo-mysql{
-    width: 80px;   /* Mets la taille que tu veux, par exemple 50px */
-    height: auto;
-}
-
-#logo-python{
-    width: 50px;   /* Mets la taille que tu veux, par exemple 40px */
-    height: auto;
-}
-
-.logo-skill {
-    width: 40px;
-    height: auto;
-}
-
-.skills-backend {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px 12px;
-    justify-items: center;
-    align-items: start;
-    font-size: small;
-}
-
-.skills-frontend {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px 12px;
-    justify-items: center;
-    align-items: start;
-    font-size: small;
-}
-
-.skills-display{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px 12px;
-    justify-items: center;
-    align-items: start;
-    font-size: small;
-}
-
-.skills-container {
-    display: flex;
     justify-content: center;
-    gap: 20px; /* espace entre les cadres */
-    flex-wrap: wrap; /* pour que ça passe bien sur mobile */
+    justify-items: center;
 }
 
-.formation-current{
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 20px;
-    width: 700px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+.backend{
+    justify-items: center;
 }
 
-.formation-past1{
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 20px;
-    width: 700px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+.generic{
+    justify-items: center;
 }
 
-
-.formations p {
-    color: rgb(55 65 81);
-
-}
-
-.learn-more {
-    text-align: right;
-}
-
-
-.pied_page {
-    width: 100%;
-    background-color: #0063c5;
-    text-align: center;
-    color: #ffffff;
-    padding: 14px;
-}
-
-.mail-link {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-#test {
-    text-transform: capitalize;
-}
-
-.pied_page p {
-    color: #ffffff;
-}
