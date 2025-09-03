@@ -33,7 +33,7 @@ body{
 }
 
 h1{
-    font-size: 300%;
+    font-size: 250%;
 }
 
 a{
@@ -48,8 +48,7 @@ a{
 
 .presentation{
     display: flex;
-    justify-content: space-between;
-    gap:20px
+    gap: 40px;
 }
 
 .presentation_content{
@@ -152,7 +151,7 @@ img{
 .skills-frontend{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 2px solid rgb(252, 252, 252); 
+    border: 1px solid rgb(175, 172, 172); 
     height: 300px;
     width: 300px;
     justify-items: center;
@@ -161,7 +160,7 @@ img{
 .skills-backend{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 2px solid rgb(252, 252, 252); 
+    border: 1px solid rgb(175, 172, 172); 
     border-radius: 0%;
     height: 300px;
     width: 300px;
@@ -171,7 +170,7 @@ img{
 .skills-generic{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 2px solid rgb(252, 252, 252); 
+    border: 1px solid rgb(175, 172, 172); 
     height: 300px;
     width: 300px;
     justify-items: center;
@@ -195,14 +194,26 @@ img{
 .frontend{
     justify-content: center;
     justify-items: center;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .backend{
     justify-items: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .generic{
     justify-items: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
