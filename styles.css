@@ -4,23 +4,137 @@
     
     margin: 0;
     padding: 0;
-    font-family: "Fira Code", monospace
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+    
+    color: white;
 }
 
+html{
+    height: 100%;
+}
 
 body{
     background-color: #282c33;
+    min-height: 100%;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
 }
 
 .main{
+    margin: 50px 250px;
+    justify-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    color: white;
-    align-items: center;
+    gap: 70px;
+}
 
+h1{
+    font-size: 300%;
+}
+
+a{
+    text-decoration: none;
 }
 
 
+
+.bluetext{
+    color: #3ab2e6;
+}
+
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    gap:20px
+}
+
+.presentation_content{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.presentation_text{
+  flex: 1;                    /* occupe l'espace restant */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centre verticalement les textes */
+  gap: 20px;
+}
+
+p{
+    color: #afb6c4;
+}
+
+img{
+    display: block;
+}
+
+.presentation_illustration{
+    position: relative;
+}
+
+.presentation_image{
+    position: relative;
+    max-width: 496px;
+    border-radius: 45%;
+    z-index: 2;
+}
+
+.background_image{
+    position: absolute;
+    right: 15%;
+    transform: rotate(0deg);
+    top: 20%;
+    z-index: 1;
+    max-width: 400px;
+}
+
+.contactredirect_button{    /* décale uniquement le bouton */
+    align-self:flex-start;     /* le garde aligné à gauche */
+    padding: 8px 16px;
+    border: 1px solid #3ab2e6;
+}
+
+.buttons_about{
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    gap: 20px;
+}
+
+.buttons_about a{
+    padding: 8px 25px;
+    text-align: center;
+    border: 1px solid #3ab2e6;
+}
+
+
+.skills{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+.competences-title{
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.skills-container h1{
+    font-size: 30px;
+}
 
 .logo{
     max-height: 70px;
@@ -38,8 +152,7 @@ body{
 .skills-frontend{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(255, 255, 255);
-    border-radius: 5%;
+    border: 2px solid rgb(252, 252, 252); 
     height: 300px;
     width: 300px;
     justify-items: center;
@@ -48,8 +161,8 @@ body{
 .skills-backend{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(255, 255, 255);
-    border-radius: 5%;
+    border: 2px solid rgb(252, 252, 252); 
+    border-radius: 0%;
     height: 300px;
     width: 300px;
     justify-items: center;
@@ -58,8 +171,7 @@ body{
 .skills-generic{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(255, 255, 255);
-    border-radius: 5%;
+    border: 2px solid rgb(252, 252, 252); 
     height: 300px;
     width: 300px;
     justify-items: center;
@@ -93,3 +205,21 @@ body{
     justify-items: center;
 }
 
+
+
+.footer{
+    margin-top: auto;
+    background-color: #22252b;
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.school_logo{
+    position: relative;
+    width: 50px;
+    align-self: center;
+}
