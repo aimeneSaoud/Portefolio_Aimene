@@ -32,6 +32,11 @@ body{
     gap: 70px;
 }
 
+#button:hover{
+    background-color: #304f5c;
+    transition: 0.5s ease;
+}
+
 h1{
     font-size: 250%;
 }
