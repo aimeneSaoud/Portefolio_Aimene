@@ -19,17 +19,13 @@ body{
     min-height: 100%;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    display: flex;
-    flex-direction: column;
 }
 
 .main{
     margin: 50px 250px;
-    justify-items: center;
-    justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    row-gap: 200px;
 }
 
 #button:hover{
@@ -121,6 +117,12 @@ img{
 }
 
 
+
+
+/* ===================== */
+/*         SKILLS        */
+/* ===================== */
+
 .skills{
     position: relative;
     display: flex;
@@ -132,95 +134,105 @@ img{
 
 
 .competences-title{
-    margin-top: 50px;
+    padding-right: 1000px;
+    text-align: left;
     font-size: 40px;
 }
 
 .skills-container h1{
-    font-size: 30px;
+    font-size: 200%;
+    width: 250px;
 }
 
 .logo{
-    max-height: 70px;
-    max-width: 70px;
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
     
 }
+
+
 
 
 .skills-container{
     display: grid;
-    grid-template-columns: repeat(3, 15vw);
-    gap:25px
-}
-
-.skills-frontend{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border: 1px solid rgb(175, 172, 172); 
-    height: 300px;
-    width: 300px;
-    justify-items: center;
-}
-
-.skills-backend{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border: 1px solid rgb(175, 172, 172); 
-    border-radius: 0%;
-    height: 300px;
-    width: 300px;
-    justify-items: center;
-}
-
-.skills-generic{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border: 1px solid rgb(175, 172, 172); 
-    height: 300px;
-    width: 300px;
-    justify-items: center;
+    grid-template-columns: repeat(3, 250px);
+    width: 100%;
     justify-content: center;
+    gap: 50px;
 }
 
-
-.skill-frontend{
-
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid rgb(175, 172, 172);
+    justify-items: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    width: 250px;
 }
 
-.skill-backend{
-    
+.skill-unit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
 }
 
-.skill-generic{
-    
+.skill-unit h2{
+    font-size: 100%;
 }
+
 
 
 .frontend{
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    gap: 20px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .backend{
-    justify-items: center;
-    gap: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .generic{
-    justify-items: center;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+/* ===================== */
+/*       PROJECTS        */
+/* ===================== */
+
+
+.projects{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
+.projects-title{
+    padding-right: 1050px;
+    text-align: left;
+    font-size: 40px;
+}
+
+
+
+
+
+
+/* ===================== */
+/*         FOOTER        */
+/* ===================== */
 
 
 .footer{
