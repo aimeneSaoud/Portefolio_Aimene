@@ -7,6 +7,7 @@
         <title>Mon Portefolio</title>
         <meta name="description" content="Bienvenue sur mon portefolio. Découvrez mes projets et compétences.">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="home.css">
         <script src="script.js"></script>
     </head>
     <body>
@@ -14,8 +15,8 @@
             <nav>
                 <ul class="links">
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="projets.html">Projets</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="projects/projects.html">Projets</a></li>
+                    <li><a href="contacts/contacts.html">Contacts</a></li>
                 </ul>
             </nav>
         </header>
@@ -137,7 +138,7 @@
                     <h1 class="section_title projects_title">
                         <span class="bluetext">#</span>projets
                     </h1>
-                    <a class="viewall_button" href="projects.html">
+                    <a class="viewall_button" href="projects/projects.html">
                         Voir tout =>
                     </a>
                 </div>
@@ -148,14 +149,14 @@
 
                             <div class="project_content">
                                 <div class="project_title">Victory Road Wiki</div>
-                                <div class="project_description">Site web répertoriant les informations concernant le jeu Inazuma Eleven Victory Road.</div>
+                                <p class="project_description">Site web répertoriant les informations concernant le jeu Inazuma Eleven Victory Road.</p>
                             </div>
                             <div class="project_skills">
                                 <div class="project_skills_container">
                                     <img src="ressources/logo/HTML5_logo.png" class="project_skill_logo">
                                     <img src="ressources/logo/CSS3_logo.png" class="project_skill_logo">
                                     <img src="ressources/logo/Javascript_logo.png" class="project_skill_logo">
-                                    <img src="ressources/logo/React_icon.png" class="project_skill_logo">
+                                    <img src="ressources/logo/PHP_logo.png" class="project_skill_logo">
                                     <img src="ressources/logo/MySQL_logo.png" class="project_skill_logo">
                                     <img src="ressources/logo/git_logo.png" class="project_skill_logo">
                                 </div>
@@ -168,12 +169,13 @@
 
                             <div class="project_content">
                                 <div class="project_title">Ce portefolio</div>
-                                <div class="project_description">Mon portefolio.</div>
+                                <p class="project_description">Mon portefolio.</p>
                             </div>
                             <div class="project_skills">
                                 <div class="project_skills_container">
                                     <img src="ressources/logo/HTML5_logo.png" class="project_skill_logo">
                                     <img src="ressources/logo/CSS3_logo.png" class="project_skill_logo">
+                                    <img src="ressources/logo/PHP_logo.png" class="project_skill_logo">
                                     <img src="ressources/logo/MySQL_logo.png" class="project_skill_logo">
                                     <img src="ressources/logo/git_logo.png" class="project_skill_logo">
                                 </div>
@@ -182,9 +184,26 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
-            </section>
             <section class="contacts" id="contacts">
+                <h1 class="section_title projects_title">
+                    <span class="bluetext">#</span>contact
+                </h1>
+                <div class="contact_content">
+                    <p>Vous pouvez me contacter pour toute question ou opportunité d'alternance en développement d'applications.</p>
+                    <div class="contact_info">
+                        <h1>Contactez-moi ici</h1>
+                        <div class="contact_units">    
+                            <div class="contact_unit">
+                                <img class="contact_logo" src="ressources/logo/mail_logo.png">
+                                <a href="mailto:aimenesaoud@gmail.com">aimenesaoud@gmail.com</a>
+                            </div>
+                            <div class="contact_unit">
+                                <img class="contact_logo" src="ressources/logo/form_logo.png">
+                                <a class="contact_button" id="button" href="contacts/contacts.html">Formulaire de contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <br>
@@ -195,7 +214,7 @@
 
         </main>
         <footer class="footer">
-            <h1><img class="school_logo" src="ressources/images/ensitech.png">SAOUD Aïmène</h1>
+            <h1>SAOUD Aïmène</h1>
             <p>Tel : 07 67 50 42 03</p>
             <a href="mailto:aimenesaoud@gmail.com" class="mail-link">aimenesaoud@gmail.com</a>
             <p>© 2025 SAOUD Aïmène. Tous droits réservés.</p>
